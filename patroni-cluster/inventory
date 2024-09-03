@@ -1,0 +1,11 @@
+[etcd]
+node01 ansible_host=192.168.1.4 ansible_user=mohamed ansible_ssh_private_key_file=/home/mohamed/.ssh/id_ed25519 ansible_become_pass=1111
+node02 ansible_host=192.168.1.15 ansible_user=mohamed ansible_ssh_private_key_file=/home/mohamed/.ssh/id_ed25519 ansible_become_pass=1111
+node03 ansible_host=192.168.1.16 ansible_user=mohamed ansible_ssh_private_key_file=/home/mohamed/.ssh/id_ed25519 ansible_become_pass=1111
+[patroni]
+node01 ansible_host=192.168.1.4 ansible_user=mohamed ansible_ssh_private_key_file=/home/mohamed/.ssh/id_ed25519 ansible_become_pass=1111
+node02 ansible_host=192.168.1.15 ansible_user=mohamed ansible_ssh_private_key_file=/home/mohamed/.ssh/id_ed25519 ansible_become_pass=1111
+node03 ansible_host=192.168.1.16 ansible_user=mohamed ansible_ssh_private_key_file=/home/mohamed/.ssh/id_ed25519 ansible_become_pass=1111
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
